@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AIVision - Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+
+            <div class="logo">
+                AIVision
+            </div>
+
+            <div class="header-text">
+                AI Dashboard
+            </div>
+
+        </header>
+
+
+        <!-- Dashboard -->
+        <main>
+
+            <h1>AI Dashboard</h1>
+
+            <p class="description">
+                Generate and view AI training data.
+            </p>
+
+
+            <!-- Data Generation -->
+            <div class="upload-box">
+
+                <h2>Training Data</h2>
+
+                <p class="upload-description">
+                    Generate synthetic data for the AI system.
+                </p>
+
+                <button onclick="generateData()">
+                    Generate Data
+                </button>
+
+                <div id="dataResult"></div>
+
+            </div>
+
+
+            <!-- Statistics -->
+            <div class="upload-box">
+
+                <h2>Statistics</h2>
+
+                <p class="upload-description">
+                    View basic statistics from the generated data.
+                </p>
+
+                <button onclick="refreshStatistics()">
+                    Refresh Statistics
+                </button>
+
+                <div id="statistics"></div>
+
+            </div>
+
+        </main>
+
+
+        <!-- Footer -->
+        <footer>
+
+            <p>
+                AIVision &copy; 2026 | AI Object Detection System
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AIVision - AI Object Detection</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+
+            <div class="logo">
+                Swazi AIVision
+            </div>
+
+            <div class="header-text">
+                AI Object Detection System
+            </div>
+
+        </header>
+
+
+        <!-- Main Content -->
+        <main>
+
+            <h1>AI Object Detection</h1>
+
+            <p class="description">
+                Upload an image and let artificial intelligence
+                identify objects automatically.
+            </p>
+
+
+            <!-- Upload Section -->
+            <div class="upload-box">
+
+                <h2>Upload an Image</h2>
+
+                <p class="upload-description">
+                    Select an image from your computer to start detection.
+                </p>
+
+                <input
+                    type="file"
+                    id="imageInput"
+                    accept="image/*"
+                >
+
+                <!-- Image Preview -->
+                <div id="preview-container">
+
+                    <img
+                        id="imagePreview"
+                        src=""
+                        alt="Image Preview"
+                    >
+
+                </div>
+
+                <button onclick="detectObjects()">
+                    Detect Objects
+                </button>
+
+            </div>
+
+
+            <!-- Detection Results -->
+            <div id="result"></div>
+
+        </main>
+
+
+        <!-- Footer -->
+        <footer>
+
+            <p>
+                AIVision &copy; 2026 | AI Object Detection System
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <script src="js/app.js"></script>
+<script src="src/script.js"></script>
+</body>
+
+</html>
